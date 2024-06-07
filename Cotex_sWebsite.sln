@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cotex_sWebsite", "Cotex'sWebsite\Cotex_sWebsite.csproj", "{B55D6761-3D20-4BB7-A6A0-60E5F7895FA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cotex_sWebsite", "Cotex_sWebsite\Cotex_sWebsite.csproj", "{B55D6761-3D20-4BB7-A6A0-60E5F7895FA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
