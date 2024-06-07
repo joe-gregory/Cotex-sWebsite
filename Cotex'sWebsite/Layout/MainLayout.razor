@@ -1,11 +1,26 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider />
+<MudThemeProvider Theme="CoterTheme"/>
 <MudDialogProvider />
 <MudSnackbarProvider />
 
 <MudLayout>
+    <TopNavBar />
     <MudMainContent>
-        @Body
+        <div style="padding-bottom:50px; padding-right:10px; padding-left:10px;">
+            @Body
+        </div>
     </MudMainContent>
+    <BottomBar />
 </MudLayout>
+
+@code{
+    MudTheme CoterTheme = new MudTheme()
+        {
+            Palette = new PaletteLight()
+            {
+                Primary = new("#424242"),
+                Tertiary = new("#000000"),
+            },
+        };
+}

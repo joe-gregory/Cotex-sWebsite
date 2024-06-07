@@ -62,7 +62,7 @@ a, .btn-link {
 }
 
     .blazor-error-boundary::after {
-        content: "An error has occurred."
+        content: "Hubo un error."
     }
 
 .loading-progress {
@@ -95,9 +95,68 @@ a, .btn-link {
 }
 
     .loading-progress-text:after {
-        content: var(--blazor-load-percentage-text, "Loading");
+        content: var(--blazor-load-percentage-text, "Cargando");
     }
 
 code {
     color: #c02d76;
 }
+/**/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-image {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .image-container {
+        justify-content: flex-start;
+    }
+}
+/*bottom app bar*/
+/**/
+.full-image-fit {
+    object-fit: contain!important; /* Ensures the whole image is visible, might add empty space around it */
+    width: 100%; /* Fit the width of the container */
+    height: auto; /* Adjust the height as needed */
+    max-height: 100%; /* Prevent the image from growing too large */
+}
+
+.image-container-horizontal {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+    .image-container-horizontal img {
+        max-width: 100%; /* Ensure the image doesn't overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
